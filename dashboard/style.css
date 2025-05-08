@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: #416b44;
+    height: 100vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .dashboard-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 90%;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .header h2 {
+    color: #416b44;
+  }
+
+  .header > button {
+    padding: 8px 16px;
+    background-color: #416b44;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-box {
+    flex: 1;
+    background-color: #e9f0ea;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 220px;
+  }
+
+  .stat-box h3 {
+    color: #416b44;
+    font-size: 2rem;
+  }
+
+  .stat-box p {
+    color: #333;
+    font-weight: 500;
+  }
+
+  canvas {
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+
+  /* login.css reutilizado */
+  .error {
+    color: red;
+    margin-top: 0.5rem;
+  }
+
+  form input, form button {
+    margin-top: 0.5rem;
+  }
+
+  .navbar {
+    background-color: #fff;
+    color: #416b44;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .navbar-links a {
+    color: #416b44;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+
+  .logout-btn {
+    background-color: white;
+    color: #416b44;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .logout-btn:hover {
+    background-color: #e3e3e3;
+  }

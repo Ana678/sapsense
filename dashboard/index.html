@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAPSense | Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="icon" type="image/svg+xml" href="../assets/logo_saps.svg">
+</head>
+<link rel="stylesheet" href="style.css" />
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="../assets/logo_saps.svg" alt="Logo SAPSense" />
+        </div>
+        <ul class="navbar-links">
+          <li><a href="#">Gerenciar Pacientes</a></li>
+          <li><a href="#">Gestão de Leitos</a></li>
+          <li><a href="#">Analisar SAPS</a></li>
+        </ul>
+        <button id="logoutBtn" class="logout-btn">Sair</button>
+    </nav>
+  <div class="dashboard-container">
+    <!-- <div class="header">
+      <img src="../assets/logo_saps.svg" alt="SAPSense" class="logo" />
+      <button id="logoutBtn" >
+        Sair
+      </button>
+    </div> -->
+
+    <div class="stats">
+      <div class="stat-box">
+        <p>Total de Pacientes</p>
+        <h3 id="totalPacientes">--</h3>
+      </div>
+      <div class="stat-box">
+        <p>Média de SAPs</p>
+        <h3 id="mediaSAPs">--</h3>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom: 1rem; color: #416b44;">Média Semanal de SAPs</h3>
+      <canvas id="graficoSAPs" height="100"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

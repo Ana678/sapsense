@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAPSense | Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/logo_saps.svg">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="../assets/logo_saps.svg" alt="SAPSense Logo" class="logo" />
+      <div class="div-title-login">
+        <h2>Bem-vindo ao SAPSense</h2>
+        <p>Transformar dados clínicos em decisões inteligentes, salvando vidas com precisão e agilidade.</p>
+      </div>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuário" required />
+        <input type="password" id="password" placeholder="Senha" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="errorMessage" class="error"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
